@@ -15,7 +15,7 @@ app.use(cookieParser())
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURI = 'mongodb+srv://Richey14:Richey1989@ninja-cluster.rswgjzn.mongodb.net/ninja-data?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://username:password@ninja-cluster.rswgjzn.mongodb.net/ninja-data?retryWrites=true&w=majority';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000), console.log('listening...S'))
   .catch((err) => console.log(err));
